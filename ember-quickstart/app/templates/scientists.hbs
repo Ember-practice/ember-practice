@@ -1,0 +1,11 @@
+<h2>List of Scientists</h2>
+
+<ul>
+<!-- data pulled from scientists.js route -->
+  {{#each model as |scientist|}}
+  <li>{{scientist}}</li>
+  {{/each}}
+</ul>
+
+<!-- inherited from application.hbs -->
+{{outlet}}
