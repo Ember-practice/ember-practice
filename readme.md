@@ -24,8 +24,12 @@ When a component is used inside a template, it has the ability to send actions t
 
 Components are designed to be reusable across different parts of your application. In order to achieve this reusability, it's important that the actions that your components send can be specified when the component is used in a template.
 
-####Other General Comparisons
+####Templates
+Ember uses the Handlebars templating library to power your app's user interface. Handlebars templates contain static HTML and dynamic content inside Handlebars expressions, which are invoked with double curly braces: {{}}.
 
+Dynamic content inside a Handlebars expression is rendered with data-binding. This means if you update a property, your usage of that property in a template will be automatically updated to the latest value.
+
+####Other General Comparisons
 Ember uses "Handlebar" while Angular has "Dirty Checking." Both scan the scope of the files for updates and changes.
 
 Has a built in concatenator and minifier for production running - this means that you wouldn't need to use Gulp. 
